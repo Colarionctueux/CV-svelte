@@ -9,7 +9,7 @@
     <aside>
       <h2>PROFIL</h2>
       <h3>Téléphone</h3>
-      <p id="blurred">06 06 06 06 06</p>
+      <p>07 71 85 23 08</p>
       <h3>E-mail</h3>
       <p>nicolas.eckmanpro@gmail.com</p>
       <h3>Date de naissance</h3>
@@ -247,11 +247,5 @@
     margin-bottom: 20px;
     width: 64px;
     height: 64px;
-  }
-
-  #blurred {
-    color: transparent;
-    text-shadow: 0 0 10px white;
-    transition: 0.5s;
   }
 </style>
