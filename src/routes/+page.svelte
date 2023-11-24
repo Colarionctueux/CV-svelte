@@ -1,95 +1,128 @@
-<main>
-  <h1>NICOLAS ECKMAN</h1>
-  <p>
-    Actuellement étudiant en BUT informatique<br />
-    à L’IUT A de Lille, je suis passionné d’informatique<br />
-    et aime apprendre dans tous les domaines.
-  </p>
-  <div>
-    <aside>
-      <h2>PROFIL</h2>
-      <h3>Téléphone</h3>
-      <p>07 71 85 23 08</p>
-      <h3>E-mail</h3>
-      <p>nicolas.eckmanpro@gmail.com</p>
-      <h3>Date de naissance</h3>
-      <p>13 mars 2004</p>
-      <h3>Lien github</h3>
-      <a href="https://github.com/Colarionctueux">Colarionctueux</a>
-      <h2>QUALITÉS</h2>
-      <ul>
-        <li>Serieux</li>
-        <li>Travail en équipe</li>
-        <li>Adaptation</li>
-        <li>Communication</li>
-      </ul>
-      <h2>LANGUES</h2>
-      <ul>
-        <li>Français - natif</li>
-        <li>Anglais - B2</li>
-        <li>Allemand - bases</li>
-      </ul>
-    </aside>
-    <article>
-      <section>
-        <h2>FORMATION</h2>
-        <table>
-          <tbody>
-            <tr>
-              <th>Actuellement</th>
-              <td><b>BUT Informatique</b><br />IUT de Lille</td>
-            </tr>
-            <tr>
-              <th>2022</th>
-              <td
-                ><b>Baccalauréat<br />Spécialités Maths - NSI</b><br />Lycée
-                Raymond Queneau</td
-              >
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <section class="competences">
-        <h2>COMPÉTENCES</h2>
-        <div>
-          <b>Développement</b>
-          <b>Projets</b>
-        </div>
-        <div transition:blur>
-          <div class="images">
-            <img src="/java.svg" alt="logo java" />
-            <img src="/bash.svg" alt="logo bash" />
-            <img src="/html.svg" alt="logo html" />
-            <img src="/css.svg" alt="logo css" />
-            <img src="/c.svg" alt="logo c" />
-            <img src="/psql.svg" alt="logo psql" />
+<script>
+  import { onMount } from "svelte";
+  import { fade, blur, fly, slide, scale } from "svelte/transition";
+  onMount(() => {
+    show = true;
+  });
+
+  let show = false;
+</script>
+
+{#if show}
+  <main>
+    <h1>NICOLAS ECKMAN</h1>
+    <p>
+      Actuellement étudiant en BUT informatique<br />
+      à L’IUT A de Lille, je suis passionné d’informatique<br />
+      et aime apprendre dans tous les domaines.
+    </p>
+    <div>
+      <aside>
+        <h2 transition:slide={{ axis:'x', delay:100}}>PROFIL</h2>
+        <h3 transition:fade={{ delay:100, duration: 500 }}>Téléphone</h3>
+        <p transition:fade={{ delay:100, duration: 500 }}>07 71 85 23 08</p>
+        <h3 transition:fade={{ delay:200, duration: 500 }}>E-mail</h3>
+        <p transition:fade={{ delay:200, duration: 500 }}>nicolas.eckmanpro@gmail.com</p>
+        <h3 transition:fade={{ delay:300, duration: 500 }}>Date de naissance</h3>
+        <p transition:fade={{ delay:300, duration: 500 }}>13 mars 2004</p>
+        <h3 transition:fade={{ delay:400, duration: 500 }}>Lien github</h3>
+        <a href="https://github.com/Colarionctueux"  transition:fade={{ delay:400, duration: 500 }}>Colarionctueux</a>
+        <h2 transition:slide={{ axis:'x', delay:400}}>QUALITÉS</h2>
+        <ul>
+          <li transition:fade = {{delay : 500, duration: 500}}>Serieux</li>
+          <li transition:fade = {{delay : 600, duration: 500}}>Travail en équipe</li>
+          <li transition:fade = {{delay : 700, duration: 500}}>Adaptation</li>
+          <li transition:fade = {{delay : 800, duration: 500}}>Communication</li>
+        </ul>
+        <h2 transition:slide={{ axis:'x', delay:800}}>LANGUES</h2>
+        <ul>
+          <li transition:fade = {{delay : 900, duration: 500}}>Français - natif</li>
+          <li transition:fade = {{delay : 1000, duration: 500}}>Anglais - B2</li>
+          <li transition:fade = {{delay : 1100, duration: 500}}>Allemand - bases</li>
+        </ul>
+      </aside>
+      <article>
+        <section>
+          <h2 transition:slide={{ axis:'x', delay:350, duration: 600}}>FORMATION</h2>
+          <table>
+            <tbody>
+              <tr transition:fade = {{delay : 300, duration: 500}}>
+                <th>Actuellement</th>
+                <td><b>BUT Informatique</b><br />IUT de Lille</td>
+              </tr>
+              <tr transition:fade = {{delay : 400, duration: 500}}>
+                <th>2022</th>
+                <td><b>Baccalauréat<br />Spécialités Maths - NSI</b><br />Lycée Raymond Queneau</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section class="competences">
+          <h2 transition:slide={{ axis:'x', delay:550, duration: 600}}>COMPÉTENCES</h2>
+          <div>
+            <b transition:fade = {{delay : 500, duration: 500}}>Développement</b>
+            <b transition:fade = {{delay : 600, duration: 500}}>Projets</b>
           </div>
-          <ul>
-            <li>Jeu - Méthode agile, Java</li>
-            <li>SQL - Gestion base de donnée, Requêtage</li>
-            <li>IHM - Application d'échange linguistique</li>
-            <li>HTML - Site d'aide au covoiturage</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <h2>EXPÉRIENCE</h2>
-        <table>
-          <tbody>
-            <tr>
-              <th>2022</th>
-              <td><b>Agent d'accueil</b><br />Basic-Fit</td>
-            </tr>
-            <tr>
-              <th>2019</th>
-              <td><b>Stage d'observation</b><br />Sogeti - Capgemini</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </article>
-  </div>
-</main>
+          <div transition:blur>
+            <div class="images">
+              <img
+                transition:fade={{ delay: 700, duration: 500 }}
+                src="/java.svg"
+                alt="logo java"
+              />
+              <img
+                transition:fade={{ delay: 800, duration: 500 }}
+                src="/bash.svg"
+                alt="logo bash"
+              />
+              <img
+                transition:fade={{ delay: 900, duration: 500 }}
+                src="/html.svg"
+                alt="logo html"
+              />
+              <img
+                transition:fade={{ delay: 1000, duration: 500 }}
+                src="/css.svg"
+                alt="logo css"
+              />
+              <img
+                transition:fade={{ delay: 1100, duration: 500 }}
+                src="/c.svg"
+                alt="logo c"
+              />
+              <img
+                transition:fade={{ delay: 1200, duration: 500 }}
+                src="/psql.svg"
+                alt="logo psql"
+              />
+            </div>
+            <ul>
+              <li transition:fade={{ delay: 700, duration: 500}}>Jeu - Méthode agile, Java</li>
+              <li transition:fade={{ delay: 900, duration: 500 }}>SQL - Gestion base de donnée, Requêtage</li>
+              <li transition:fade={{ delay: 1100, duration: 500 }}>IHM - Application d'échange linguistique</li>
+              <li transition:fade={{ delay: 1200, duration: 500 }}>HTML - Site d'aide au covoiturage</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <h2  transition:slide={{ axis:'x', delay:950, duration: 600}}>EXPÉRIENCE</h2>
+          <table>
+            <tbody>
+              <tr transition:fade = {{delay : 1300, duration: 500}}>
+                <th>2022</th>
+                <td><b>Agent d'accueil</b><br />Basic-Fit</td>
+              </tr>
+              <tr transition:fade = {{delay : 1400, duration: 500}}>
+                <th>2019</th>
+                <td><b>Stage d'observation</b><br />Sogeti - Capgemini</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </article>
+    </div>
+  </main>
+{/if}
 
 <style>
   :global(*) {
@@ -98,9 +131,7 @@
 
   :global(body) {
     display: flex;
-    margin: 0;
     justify-content: center;
-    padding: 30px;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
@@ -247,5 +278,12 @@
     margin-bottom: 20px;
     width: 64px;
     height: 64px;
+  }
+
+  @media screen and (max-width: 900px ){
+    :global(body) {
+      display: initial;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 </style>
