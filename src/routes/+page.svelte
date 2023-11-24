@@ -8,6 +8,10 @@
   let show = false;
 </script>
 
+<svelte:head>
+  <title>CV Nicolas Eckman</title>
+</svelte:head>
+
 {#if show}
   <main>
     <h1>NICOLAS ECKMAN</h1>
