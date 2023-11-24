@@ -185,6 +185,7 @@
     padding-right: 1em;
     background: linear-gradient(to bottom, rgb(10, 68, 156), rgb(1, 28, 88));
     width: 35%;
+    height: 100%;
     border-radius: 0 5px 5px 0;
   }
 
@@ -295,15 +296,14 @@
   @media screen and (max-width: 900px ){
     :global(body) {
       width: 900px;
-      position: relative;
-      left: 0;
+      height: 100%;
     }
     
     main {
       width: 100%;
       position: absolute;
-      transform: translateX(-10%);
-      left: 0;
+      left: -21%;
+      transform: translate(0);
     }
   }
 </style>
