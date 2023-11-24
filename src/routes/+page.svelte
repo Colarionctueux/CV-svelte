@@ -14,7 +14,8 @@
     <p>
       Actuellement étudiant en BUT informatique<br />
       à L’IUT A de Lille, je suis passionné d’informatique<br />
-      et aime apprendre dans tous les domaines.
+      et aime apprendre dans tous les domaines.<br />
+      <b>Je recherche un stage du 15/04 au 21/06.</b>
     </p>
     <div>
       <aside>
@@ -154,7 +155,7 @@
 
   main h1 {
     margin-left: 1em;
-    margin-top: 30px;
+    margin-top: 5px;
     margin-bottom: 0;
     font-size: 3em;
     color: rgb(5, 42, 53);
@@ -173,7 +174,7 @@
     width: 70%;
     font-size: 1.7em;
     margin-bottom: 35px;
-    margin-top: 35px;
+    margin-top: 25px;
     color: white;
     border-radius: 0 5px 5px 0;
   }
