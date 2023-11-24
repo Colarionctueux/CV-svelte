@@ -121,8 +121,8 @@
         </section>
       </article>
     </div>
+    <p>Réalisé avec SvelteKit et hébergé par Vercel</p>
   </main>
-  <p>Réalisé avec SvelteKit et hébergé par Vercel</p>
 {/if}
 
 <style>
@@ -134,14 +134,18 @@
     display: flex;
     justify-content: center;
     background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(0.70);
   }
 
   main {
     width: 900px;
+    position: absolute;
     height: calc(900px * 1.41);
     background-color: rgb(255, 255, 255);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    transform: translateX(-50%);
+    left: 50%;
   }
 
   main > * {
@@ -279,6 +283,13 @@
     margin-bottom: 20px;
     width: 64px;
     height: 64px;
+  }
+
+  main > p:last-of-type{
+    background: none;
+    color: rgb(102, 102, 102);
+    padding: 0;
+    margin: 0;
   }
 
   @media screen and (max-width: 900px ){
