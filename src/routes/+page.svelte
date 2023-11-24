@@ -122,6 +122,7 @@
       </article>
     </div>
   </main>
+  <p>Réalisé avec SvelteKit et hébergé par Vercel</p>
 {/if}
 
 <style>
