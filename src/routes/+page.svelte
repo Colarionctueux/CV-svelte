@@ -294,8 +294,16 @@
 
   @media screen and (max-width: 900px ){
     :global(body) {
-      display: initial;
-      background-color: rgba(0, 0, 0, 0.1);
+      width: 900px;
+      position: relative;
+      left: 0;
+    }
+    
+    main {
+      width: 100%;
+      position: absolute;
+      transform: translateX(-10%);
+      left: 0;
     }
   }
 </style>
