@@ -63,10 +63,10 @@
           </table>
         </section>
         <section class="competences">
-          <h2 transition:slide={{ axis:'x', delay:550, duration: 600}}>COMPÉTENCES</h2>
+          <h2 transition:slide={{ axis:'x', delay:550, duration: 600}}>COMPÉTENCES</h2> 
           <div>
             <b transition:fade = {{delay : 500, duration: 500}}>Développement</b>
-            <b transition:fade = {{delay : 600, duration: 500}}>Projets</b>
+            <b transition:fade = {{delay : 600, duration: 500}}>Projets </b> 
           </div>
           <div transition:blur>
             <div class="images">
@@ -102,7 +102,7 @@
               />
             </div>
             <ul>
-              <li transition:fade={{ delay: 700, duration: 500}}>Jeu - Méthode agile, Java</li>
+              <li transition:fade={{ delay: 700, duration: 500}}>WEB -<a target="_blank" class="portfolio" href="google.com">Portfolio</a>, SvelteKit (en cours de développement)</li>
               <li transition:fade={{ delay: 900, duration: 500 }}>SQL - Gestion base de donnée, Requêtage</li>
               <li transition:fade={{ delay: 1100, duration: 500 }}>IHM - Application d'échange linguistique</li>
               <li transition:fade={{ delay: 1200, duration: 500 }}>HTML - Site d'aide au covoiturage</li>
@@ -176,7 +176,7 @@
     padding-left: 1em;
     padding-right: 0;
     width: 70%;
-    font-size: 1.7em;
+    font-size: 1.6em;
     margin-bottom: 35px;
     margin-top: 25px;
     color: white;
@@ -269,6 +269,13 @@
     padding-left: 1.5em;
     padding-right: 11em;
     justify-content: space-between;
+  }
+
+  .portfolio {
+    font-size: 1em;
+    color: rgb(10, 68, 156);
+    padding-left: 10px;
+
   }
 
   .competences li:first-of-type {
