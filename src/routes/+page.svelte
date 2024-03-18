@@ -103,9 +103,9 @@
             </div>
             <ul>
               <li transition:fade={{ delay: 700, duration: 500}}>WEB -<a target="_blank" class="portfolio" href="https://portfolio-ashy-six-95.vercel.app">Portfolio</a>, SvelteKit (en cours de développement)</li>
+              <li transition:fade={{ delay: 1100, duration: 500 }}>VM - Configuration d'une VM</li>
+              <li transition:fade={{ delay: 1200, duration: 500 }}>Réseau - Déploiement Odoo (En cours)</li>
               <li transition:fade={{ delay: 900, duration: 500 }}>SQL - Gestion base de donnée, Requêtage</li>
-              <li transition:fade={{ delay: 1100, duration: 500 }}>IHM - Application d'échange linguistique</li>
-              <li transition:fade={{ delay: 1200, duration: 500 }}>HTML - Site d'aide au covoiturage</li>
             </ul>
           </div>
         </section>
