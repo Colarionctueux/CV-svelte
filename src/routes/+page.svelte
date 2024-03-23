@@ -34,7 +34,7 @@
         <a href="https://github.com/Colarionctueux"  transition:fade={{ delay:400, duration: 500 }}>Colarionctueux</a>
         <h2 transition:slide={{ axis:'x', delay:400}}>QUALITÉS</h2>
         <ul>
-          <li transition:fade = {{delay : 500, duration: 500}}>Serieux</li>
+          <li transition:fade = {{delay : 500, duration: 500}}>Sérieux</li>
           <li transition:fade = {{delay : 600, duration: 500}}>Travail en équipe</li>
           <li transition:fade = {{delay : 700, duration: 500}}>Adaptation</li>
           <li transition:fade = {{delay : 800, duration: 500}}>Communication</li>
@@ -105,7 +105,7 @@
               <li transition:fade={{ delay: 700, duration: 500}}>WEB -<a target="_blank" class="portfolio" href="https://portfolio-ashy-six-95.vercel.app">Portfolio</a>, SvelteKit (en cours de développement)</li>
               <li transition:fade={{ delay: 800, duration: 500 }}>VM - Configuration d'une VM</li>
               <li transition:fade={{ delay: 900, duration: 500 }}>Réseau - Déploiement Odoo (En cours)</li>
-              <li transition:fade={{ delay: 1000, duration: 500 }}>SQL - Gestion base de donnée, Requêtage</li>
+              <li transition:fade={{ delay: 1000, duration: 500 }}>SQL - Gestion base de données, Requêtage</li>
             </ul>
           </div>
         </section>
